@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signosback"
+    tools:context=".MainActivity" >
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineSuperior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineInferior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="706dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineEquerda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineDireita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="388dp" />
+
+    <ImageView
+        android:id="@+id/imageViewSignos"
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineInferior"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineDireita"
+        app:layout_constraintStart_toStartOf="@+id/guidelineEquerda"
+        app:layout_constraintTop_toTopOf="@+id/guidelineSuperior"
+        app:layout_constraintVertical_bias="0.526"
+        app:srcCompat="@drawable/signos" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineSuperiorSignos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="301dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineInferiorSignos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="447dp" />
+
+    <TextView
+        android:id="@+id/textViewCapricornio"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text=""
+        android:tooltipText="@string/capricornio"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewSignos"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewSignos"
+        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintStart_toStartOf="@+id/imageViewSignos"
+        app:layout_constraintTop_toTopOf="@+id/guidelineSuperiorSignos"
+        app:layout_constraintVertical_bias="0.178" />
+
+    <TextView
+        android:id="@+id/textViewCancer"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text=""
+        android:tooltipText="@string/cancer"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineInferiorSignos"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewSignos"
+        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintStart_toStartOf="@+id/imageViewSignos"
+        app:layout_constraintTop_toTopOf="@+id/guidelineSuperiorSignos"
+        app:layout_constraintVertical_bias="0.812" />
+
+    <TextView
+        android:id="@+id/textViewPeixes"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text=""
+        android:tooltipText="@string/peixes"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineInferiorSignos"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewSignos"
+        app:layout_constraintHorizontal_bias="0.24"
+        app:layout_constraintStart_toStartOf="@+id/imageViewSignos"
+        app:layout_constraintTop_toTopOf="@+id/guidelineSuperiorSignos"
+        app:layout_constraintVertical_bias="0.187" />
+
+    <TextView
+        android:id="@+id/textViewAquario"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text=""
+        android:tooltipText="@string/aquario"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineInferiorSignos"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewSignos"
+        app:layout_constraintHorizontal_bias="0.406"
+        app:layout_constraintStart_toStartOf="@+id/imageViewSignos"
+        app:layout_constraintTop_toTopOf="@+id/guidelineSuperiorSignos"
+        app:layout_constraintVertical_bias="0.187" />
+
+    <TextView
+        android:id="@+id/textViewAries"
+        android:layout_width="52dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text=""
+        android:tooltipText="@string/aries"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewSignos"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewSignos"
+        app:layout_constraintHorizontal_bias="0.577"
+        app:layout_constraintStart_toStartOf="@+id/imageViewSignos"
+        app:layout_constraintTop_toTopOf="@+id/guidelineSuperiorSignos"
+        app:layout_constraintVertical_bias="0.178" />
+
+    <TextView
+        android:id="@+id/textViewTouro"
+        android:layout_width="52dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text=""
+        android:tooltipText="@string/touro"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineInferiorSignos"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewSignos"
+        app:layout_constraintHorizontal_bias="0.751"
+        app:layout_constraintStart_toStartOf="@+id/imageViewSignos"
+        app:layout_constraintTop_toTopOf="@+id/imageViewSignos"
+        app:layout_constraintVertical_bias="0.187" />
+
+    <TextView
+        android:id="@+id/textViewGemeos"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text=""
+        android:tooltipText="@string/gemeos"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineInferiorSignos"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewSignos"
+        app:layout_constraintHorizontal_bias="0.916"
+        app:layout_constraintStart_toStartOf="@+id/imageViewSignos"
+        app:layout_constraintTop_toTopOf="@+id/guidelineSuperiorSignos"
+        app:layout_constraintVertical_bias="0.187" />
+
+    <TextView
+        android:id="@+id/textViewLeao"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text=""
+        android:tooltipText="@string/leao"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewSignos"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewSignos"
+        app:layout_constraintHorizontal_bias="0.24"
+        app:layout_constraintStart_toStartOf="@+id/imageViewSignos"
+        app:layout_constraintTop_toTopOf="@+id/guidelineSuperiorSignos"
+        app:layout_constraintVertical_bias="0.773" />
+
+    <TextView
+        android:id="@+id/textViewVirgem"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text=""
+        android:tooltipText="@string/virgem"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineInferiorSignos"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewSignos"
+        app:layout_constraintHorizontal_bias="0.406"
+        app:layout_constraintStart_toStartOf="@+id/imageViewSignos"
+        app:layout_constraintTop_toTopOf="@+id/guidelineSuperiorSignos"
+        app:layout_constraintVertical_bias="0.812" />
+
+    <TextView
+        android:id="@+id/textViewLibra"
+        android:layout_width="52dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text=""
+        android:tooltipText="@string/libra"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineInferiorSignos"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewSignos"
+        app:layout_constraintHorizontal_bias="0.577"
+        app:layout_constraintStart_toStartOf="@+id/imageViewSignos"
+        app:layout_constraintTop_toTopOf="@+id/guidelineSuperiorSignos"
+        app:layout_constraintVertical_bias="0.812" />
+
+    <TextView
+        android:id="@+id/textViewEscorpiao"
+        android:layout_width="52dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text=""
+        android:tooltipText="@string/escorpiao"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineInferiorSignos"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewSignos"
+        app:layout_constraintHorizontal_bias="0.748"
+        app:layout_constraintStart_toStartOf="@+id/imageViewSignos"
+        app:layout_constraintTop_toTopOf="@+id/guidelineSuperiorSignos"
+        app:layout_constraintVertical_bias="0.812" />
+
+    <TextView
+        android:id="@+id/textViewSargitario"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text=""
+        android:tooltipText="@string/sagitario"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineInferiorSignos"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewSignos"
+        app:layout_constraintHorizontal_bias="0.916"
+        app:layout_constraintStart_toStartOf="@+id/imageViewSignos"
+        app:layout_constraintTop_toTopOf="@+id/guidelineSuperiorSignos"
+        app:layout_constraintVertical_bias="0.812" />
+
+</android.support.constraint.ConstraintLayout>

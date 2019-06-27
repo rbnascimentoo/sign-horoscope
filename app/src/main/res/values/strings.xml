@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Zodiac"</string>
+    <string name="capricornio">Capricórnio</string>
+    <string name="aquario">Aquário</string>
+    <string name="peixes">Peixes</string>
+    <string name="aries">Áries</string>
+    <string name="touro">Touro</string>
+    <string name="gemeos">Gêmeos</string>
+    <string name="cancer">Câncer</string>
+    <string name="virgem">Virgem</string>
+    <string name="libra">Libra</string>
+    <string name="escorpiao">Escorpião</string>
+    <string name="sagitario">Sagitário</string>
+    <string name="leao">Leão</string>
+</resources>
